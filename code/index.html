@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>PowerAthlon</title>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+  <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css"/>
+</head>
+<body>
+  <ion-app>
+      <ion-header>
+        <ion-toolbar color="dark">
+          <ion-title>PowerAthlon</ion-title>
+            </ion-toolbar >
+              </ion-header>
+                <ion-content>
+                  <ion-grid>
+                  <ion-row>
+            <ion-col size-md="6" offset-md="3">
+           <ion-card>
+        <ion-card-header>
+          <ion-card-title>Registration Page</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <ion-item>
+                  <ion-label position="floating">Username </ion-label>
+                  <ion-input type="text" id="username"></ion-input>
+                </ion-item>
+                <ion-item>
+                  <ion-label position="floating">email</ion-label>
+                  <ion-input type="email" id="email"></ion-input>
+                </ion-item>
+                <ion-item>
+                  <ion-label position="floating">Password</ion-label>
+                  <ion-input type="password" id="password"></ion-input>
+                </ion-item>
+                <ion-item>
+                  <ion-label>Coach Mode</ion-label>
+                  <ion-checkbox slot="end" value="CoachMode" id="coachMode"></ion-checkbox>
+            </ion-item>
+            <div class="ion-text-center"> 
+            <ion-button color="danger" id="cancel"><ion-icon name="trash"></ion-icon>Clear</ion-button>
+            <ion-button id="add"><ion-icon name="person-add"></ion-icon>Create user</ion-button>
+        </ion-card-content>
+          </div>
+        </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    </ion-content>
+  </ion-app>
+  <script src="app.js"></script>
+</body>
+</html>
